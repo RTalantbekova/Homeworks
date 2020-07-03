@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckActivity">
+    <CheckBox
+        android:id="@+id/cbOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txt_One"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Reservations"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"
+        android:textSize="25sp"/>
+
+    <CheckBox
+        android:id="@+id/cbTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_One"
+        app:layout_constraintEnd_toStartOf="@id/txt_Two"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_Two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Pursuit of Happyness"
+        app:layout_constraintTop_toBottomOf="@id/txt_One"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"/>
+
+    <CheckBox
+        android:id="@+id/cbThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/txt_Three"
+        app:layout_constraintTop_toBottomOf="@id/txt_Two"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_Three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anna and the King"
+        app:layout_constraintTop_toBottomOf="@id/txt_Two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RETURN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_Three"
+        android:layout_marginTop="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
